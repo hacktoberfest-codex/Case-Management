@@ -9,13 +9,17 @@ function App() {
 
   return (
     <>
+
 <BrowserRouter>
+<Nav />
 <Routes>
 <Route path="/home" element={<Home />}/>
+<Route path="/about" element={<About/>}/>
 </Routes>
 </BrowserRouter>
+
 {/**     <div className="overflow-x-hidden">
-        <Nav />
+        
         <hr />
         <Banner />
         <About />

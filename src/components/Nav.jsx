@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -48,9 +49,12 @@ const Navbar = () => {
                 <ul className="block lg:flex text-blue-600 ">
                   <ListItem 
                     navItemStyles="text-dark"
-                    NavLink="/#home"
+                    
                   >
+                    <NavLink to="/home">
                     Home
+                    </NavLink>
+                  
                   </ListItem>
                   <ListItem
                     navItemStyles="text-dark hover:text-primary"

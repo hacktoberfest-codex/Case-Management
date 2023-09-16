@@ -1,0 +1,2 @@
+This is a folder for Android app.
+  //This file is not a part of android project. 

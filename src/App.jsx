@@ -1,6 +1,7 @@
 import Nav from "./components/Nav"
 import Banner from "./components/Banner"
 import About from "./components/About"
+import Vision from "./components/Vision"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <hr />
         <Banner />
         <About />
+        <Vision />
         </div>
     </>
   )

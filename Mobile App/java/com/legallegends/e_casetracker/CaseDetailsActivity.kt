@@ -31,7 +31,7 @@ class CaseDetailsActivity : AppCompatActivity() {
          caseNumber=intent.getStringExtra("CaseNumber")
          caseStatus=intent.getStringExtra("CaseStatus")
         val CaseSpanValue = intent.getDoubleExtra("SpanValue", 0.0)
-        val CaseType = intent.getStringExtra("SpanDescription")
+        val CaseType = intent.getStringExtra("Type")
 
 
         detailsBinding.apply {

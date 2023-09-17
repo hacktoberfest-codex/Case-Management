@@ -17,19 +17,20 @@
 
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/shapeableImageView"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="10dp"
-
-            android:src="@drawable/logo1"
-            app:contentPaddingTop="30dp"
+            android:id="@+id/shapeableImageskullView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:elevation="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/signup"
+            app:contentPaddingTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:scaleType="fitCenter"
             app:shapeAppearanceOverlay="@style/AppLogo"
-            app:strokeColor="#00ecbc"
+            app:strokeColor="@color/white"
             app:strokeWidth="4dp" />
 
         <TextView
@@ -42,9 +43,9 @@
             android:text="Don't Worry!"
             android:textColor="@color/white"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
-            app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
-           app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageskullView"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageskullView"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageskullView" />
 
         <TextView
             android:id="@+id/textView2"

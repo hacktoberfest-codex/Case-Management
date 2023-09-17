@@ -3,6 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <>
+     <div className="h-28 bg-[#eef3f3] flex px-36 justify-between">
+            <img className="mt-2 mb-2" src="/image/Ministry_of_Law_and_Justice.svg.png" alt="" />
+            <img src="https://lawmin.gov.in/sites/all/themes/landj/images/swach-bharat.png" alt="" />
+        </div>
       <footer className="pl-24 relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
         <div className="container">
           <div className="flex flex-wrap -mx-4">

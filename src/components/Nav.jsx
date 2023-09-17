@@ -5,11 +5,7 @@ const Navbar = () => {
 
   return (
       <>
-       <div className="h-28 bg-[#eef3f3] flex px-36 justify-between">
-            <img className="mt-2 mb-2" src="/image/Ministry_of_Law_and_Justice.svg.png" alt="" />
-            <img src="https://lawmin.gov.in/sites/all/themes/landj/images/swach-bharat.png" alt="" />
-        </div>
-
+      
        
         <header className={`flex items-center w-full bg-white overflow`}>
       <div className="container">

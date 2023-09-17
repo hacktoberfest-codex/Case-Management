@@ -31,7 +31,7 @@ export default function () {
                         </div>
                     </div>
                     <div className="">
-                       <img className='-my-8' src="image/Screenshots.png" alt="emulator" />
+                       <img className='-my-8  ' src="image/Screenshots.png" alt="emulator" />
                     </div>
  
                    

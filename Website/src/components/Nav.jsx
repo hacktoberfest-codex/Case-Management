@@ -85,7 +85,9 @@ const Navbar = () => {
             </div>
             <div className="justify-end hidden pr-16 mr-28 sm:flex lg:pr-0">
             <div className="flex items-center gap-5">
+              <a href="https://shorturl.at/wNU39" target="_blank">
                 <p className="font-semibold">Download</p>
+                </a>
             <button className="border to-black px-6 py-2 bg-[#2e34d2] text-white rounded-lg">Login/register</button>
             </div>
             </div>

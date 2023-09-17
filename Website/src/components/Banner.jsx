@@ -22,10 +22,10 @@ export default function () {
 
                         <span className='font-serif text-3xl'>No more Pending Cases ...</span> <br /><br />
                         <div className="mt-30 gap-6 flex">
-                            <a href="#" target='_blank'>
+                            <a href="https://shorturl.at/wNU39" target='_blank'>
                                 <img className='h-[70px]' src="/image/google-play-1.svg" alt="" />
                             </a>
-                            <a href="#" target='_blank'>
+                            <a href="https://shorturl.at/wNU39" target='_blank'>
                                 <img className='h-[70px]' src="/image/app-store-1.svg" alt="" />
                             </a>
                         </div>

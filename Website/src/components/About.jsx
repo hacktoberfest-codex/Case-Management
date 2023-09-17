@@ -637,7 +637,8 @@ const About1 = () => {
 </div>
             
               <a
-                href="/#"
+                href="https://docs.google.com/presentation/d/1gq546EBCFdTX-ep1wahTLJYsWJOcuNyT/edit?usp=drivesdk&ouid=101142784081014068335&rtpof=true&sd=true"
+                target="_blank"
                 className="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-center text-white rounded-lg bg-blue-800 hover:bg-opacity-90 lg:px-8 xl:px-10"
               >
                 Know More

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Infinity Walls</string>
+    <string name="account">Don\'t you have an account yet?<font color="@color/black"><b><u><i>Sign Up</i></u></b></font></string>
+    <string name="forgot_password"><b><u><i>I forgot my password </i></u></b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

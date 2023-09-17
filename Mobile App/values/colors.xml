@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="your_status_bar_color">#00ecbc</color>
+    <color name="start_color">#00ecbc</color>
+    <color name="end_color">#007adf</color>
+    <color name="fox_color">#02C3B9</color>
+    <color name="textColor">#1FC57A</color>
+    <color name="StartColor">#53E88B</color>
+    <color name="EndColor">#15BE77</color>
+    <color name="IconColor">#FEAD1D</color>
+    <color name="your_text_color">#FF000000</color>
+    <color name="your_hint_color">#999999</color>
+    <color name="nav_color">#1694a7</color>
+    <color name="bottom_nav_item_normal">#FFFFFF</color>
+    <color name="bottom_nav_item_hovered">#FF5733</color>
+    <color name="ActiveCase">#4099EC</color>
+    <color name="RecentCase">#15BE77</color>
+    <color name="PendingCase">#ea2421</color>
+</resources>

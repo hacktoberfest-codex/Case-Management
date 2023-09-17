@@ -11,7 +11,7 @@ export default function () {
             <div className="z-50 bottom-12 border-2 border-neutral-400 relative w-4/5 mx-auto h-[450px] bg-white shadow-xl rounded-3xl p-8">
                 <div className='flex justify-between'>
                     <div className="text-5xl font-bold ">
-                        <span className='mr-2 '>NOW CASE MANAGEMENT IS
+                        <span className='mr-2 '>NOW CASE MANAGEMENT IS EVEN MORE
                         <Typewriter className
                             options={{
                                 strings: ['Well Ordered', 'Reliable', ' Faster'],
@@ -30,13 +30,12 @@ export default function () {
                             </a>
                         </div>
                     </div>
-{/**
-  <div className="">
-                        <img className='w-96 mb-11 ml-36' src="" alt="" />
+                    <div className="">
+                       <img className='-my-8' src="image/Screenshots.png" alt="emulator" />
                     </div>
- */}
+ 
                    
-                    {/* <p className="text-white text-center">Sign up for our newsletter to get the latest news, announcements and special offers.</p> */}
+                    
                 </div>
             </div>
         </div>

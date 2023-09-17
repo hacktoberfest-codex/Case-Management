@@ -624,7 +624,7 @@ const About1 = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
                 <span className="block mb-2 text-lg font-semibold text-primary">
-
+                  Why to Choose us?
                 </span>
                 <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
                   ABOUT US
@@ -634,17 +634,13 @@ const About1 = () => {
                     We provide technology solutions for Differentiated Case Flow Management (DCM) in High Courts and Subordinate Courts. We understand that cases differ substantially in the time required for a fair and timely adjudication, and not all cases make the same demands upon judicial system resources. Therefore, we believe that cases need not be subject to the same processing requirements.</p><br />
 
            <p>Our DCM system enables courts to prioritize cases and recognize that many cases can and should proceed through the court system at a faster pace than others if appropriate pathways are provided. Under a DCM system, cases do not wait for disposition simply on the basis of the chronological order of their filing. This greatly aids in minimizing and making more predictable the time between case events, and aids efficient disposal of cases.</p>
-
-                  <span className="hidden" id="more-text">
-                  <p>Our DCM system will also be powered by artificial intelligence (AI) and machine learning (ML) algorithms in it's future updates. These algorithms will analyze a variety of factors, such as the nature of the case, the complexity of the issues involved, and the availability of judicial resources, to determine the appropriate processing track for each case. The system also provides judges with real-time data and analytics to help them make informed decisions about case scheduling and management.</p>
-              </span>
-              </div>
+</div>
             
               <a
                 href="/#"
                 className="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-center text-white rounded-lg bg-blue-800 hover:bg-opacity-90 lg:px-8 xl:px-10"
               >
-                Get Started
+                Know More
               </a>
             </div>
           </div>

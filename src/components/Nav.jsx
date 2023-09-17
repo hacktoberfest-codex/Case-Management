@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -12,15 +11,15 @@ const Navbar = () => {
         </div>
 
        
-    <header className={`flex items-center w-full bg-white overflow`}>
+        <header className={`flex items-center w-full bg-white overflow`}>
       <div className="container">
         <div className="relative flex items-center justify-between -mx-4">
           <div className="max-w-full px-4 w-60">
             <a href="/#" className="block w-full">
               <img
-                src="/image/Logo_new.png"
+                src="/image/my_Logo.png"
                 alt="logo"
-                className="w-[90px] h-[90px] mx-28 "
+                className="w-36 h-32 mx-28 "
               />
             </a>
           </div>
@@ -35,9 +34,11 @@ const Navbar = () => {
                   open && "navbarTogglerActive"
                 } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
               >
-                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
-                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
-                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">Home</span>
+                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">About</span>
+                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">Our Idea</span>
+                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">Categories</span>
+                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">FAQs</span>
               </button>
               <nav
                 // :className="!navbarOpen && 'hidden' "
@@ -49,12 +50,9 @@ const Navbar = () => {
                 <ul className="block lg:flex text-blue-600 ">
                   <ListItem 
                     navItemStyles="text-dark"
-                    
+                    NavLink="/#home"
                   >
-                    <NavLink to="/home">
                     Home
-                    </NavLink>
-                  
                   </ListItem>
                   <ListItem
                     navItemStyles="text-dark hover:text-primary"
@@ -73,6 +71,12 @@ const Navbar = () => {
                     NavLink="/#categories"
                   >
                     Categories
+                  </ListItem>
+                  <ListItem
+                    navItemStyles="text-dark hover:text-primary"
+                    NavLink="/#caseflow"
+                  >
+                    Features
                   </ListItem>
                   <ListItem
                     navItemStyles="text-dark hover:text-primary"

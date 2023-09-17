@@ -1,32 +1,35 @@
-import Nav from "./components/Nav"
-import Banner from "./components/Banner"
+
 import About from "./components/About"
+import Accordion from "./components/Accordian"
+import Banner from "./components/Banner"
+import CaseFlow from "./components/CaseFlow"
+import Card from "./components/Category"
+import Feed from "./components/Feed"
+import Footer from "./components/Footer"
+import Footer_last from "./components/Footer_last"
+import Nav from "./components/Nav"
 import Vision from "./components/Vision"
-import { BrowserRouter,Routes,Route } from "react-router-dom"
-import Home from "./Home"
+
 
 function App() {
 
   return (
     <>
+    <div className="overflow-x-hidden">
+    <Nav />
+    <hr />
+    <Banner />
+    <About />
+    <Vision />
+    <Card />
+    <Feed />
+    <CaseFlow />
+    <Accordion />
+    <Footer />
+    <Footer_last />
+  </div>
 
-<BrowserRouter>
-<Nav />
-<Routes>
-<Route path="/home" element={<Home />}/>
-<Route path="/about" element={<About/>}/>
-</Routes>
-</BrowserRouter>
-
-{/**     <div className="overflow-x-hidden">
-        
-        <hr />
-        <Banner />
-        <About />
-        <Vision />
-        </div>
-  */}
-    </>
+          </>
   )
 }
 

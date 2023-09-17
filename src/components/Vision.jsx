@@ -616,19 +616,17 @@ const Vision = () => {
                 <p className="mb-8 text-base text-justify text-body-color">
                   Our vision for a DCM system is to create a more efficient and effective judicial process for all litigants. We believe that by using new technologies and AI to automate many of the tasks involved in case scheduling and management, we can free up judges to focus on more important matters, such as hearing cases and making decisions.
                   <br /><br />
-                <p>                  Our DCM system would be designed to 
+                  <p> Our DCM system would be designed to
 
-                  Prioritize cases based on their complexity and urgency. This would ensure that the most important cases are heard and decided first.
-                  Automate tasks such as case scheduling, document management, and case tracking. This would free up judges and court staff to focus on more strategic work.
-                  Provide real-time data and analytics to judges and court staff. This would help them to make informed decisions about case scheduling and management.
-                  Increase transparency and accountability of the judicial process. This would help to ensure that litigants have a better understanding of how their cases are being processed.</p>
+                    Prioritize cases based on their complexity and urgency. This would ensure that the most important cases are heard and decided first.
+                    Automate tasks such as case scheduling, document management, and case tracking. This would free up judges and court staff to focus on more strategic work.
+                    Provide real-time data and analytics to judges and court staff. This would help them to make informed decisions about case scheduling and management.
+                    Increase transparency and accountability of the judicial process. This would help to ensure that litigants have a better understanding of how their cases are being processed.</p>
 
                 </p>
                 <a
                   href="/#"
-                  className="inline-flex items-center justify-center px-10 py-4 text-base text-center text-white font-semibold rounded-lg bg-blue-800 hover:bg-opacity-90 lg:px-8 xl:px-10"
                 >
-                  Get Started
                 </a>
               </div>
             </div>

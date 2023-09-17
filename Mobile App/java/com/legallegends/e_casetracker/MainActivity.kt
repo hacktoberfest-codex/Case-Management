@@ -1,21 +1,12 @@
 package com.legallegends.e_casetracker
 
-import android.content.Intent
-import android.graphics.drawable.AnimationDrawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.ismaeldivita.chipnavigation.ChipNavigationBar
-import androidx.activity.OnBackPressedCallback
-import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.constraintlayout.widget.ConstraintLayout
-
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.firebase.auth.FirebaseAuth
 import com.legallegends.e_casetracker.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -86,6 +77,9 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.nav_search->{
                     navController.navigate(R.id.searchFragment)
+                }
+                R.id.nav_custom->{
+                    navController.navigate(R.id.customFragment)
                 }
                 R.id.nav_fire->{
                     mainBinding.apply {

@@ -56,7 +56,7 @@ class CategoriesRecyclerViewAdapter :
 
             Glide.with(binding.root)
                 .load(model.imageId)
-                .placeholder(R.drawable.appeal) // Replace with your placeholder image
+                .placeholder(R.drawable.logo) // Replace with your placeholder image
                 .error(R.drawable.error) // Replace with your error image
                 .into(binding.ImageView) // Correct the ImageView ID to match your XML
         }

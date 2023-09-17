@@ -14,7 +14,7 @@ import com.legallegends.e_casetracker.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
 
- lateinit var profileBinding: FragmentProfileBinding
+    lateinit var profileBinding: FragmentProfileBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -32,10 +32,10 @@ class ProfileFragment : Fragment() {
         return profileBinding.root
     }
 
-     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-         super.onViewCreated(view, savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-     }
+    }
     private fun signOut() {
         // email and password signOut
         FirebaseAuth.getInstance().signOut()

@@ -30,11 +30,11 @@ class CategoriesFragment : Fragment() {
         // Inflate the layout for this fragment
         CategoriesBinding= FragmentCategoriesBinding.inflate(inflater,container,false)
 
-         rvList.add(CategoriesRecyclerViewModel(R.drawable.civil,"Civil"))
+        rvList.add(CategoriesRecyclerViewModel(R.drawable.civil,"Civil"))
         rvList.add(CategoriesRecyclerViewModel(R.drawable.criminal2,"Criminal"))
-       rvList.add(CategoriesRecyclerViewModel(R.drawable.contract,"Contract"))
-       rvList.add(CategoriesRecyclerViewModel(R.drawable.juvenile,"Juvenile"))
-       rvList.add(CategoriesRecyclerViewModel(R.drawable.appeal,"Appeal"))
+        rvList.add(CategoriesRecyclerViewModel(R.drawable.contract,"Contract"))
+        rvList.add(CategoriesRecyclerViewModel(R.drawable.juvenile,"Juvenile"))
+        rvList.add(CategoriesRecyclerViewModel(R.drawable.appeal,"Appeal"))
 
 
         CategoriesRvAdapter= CategoriesRecyclerViewAdapter()

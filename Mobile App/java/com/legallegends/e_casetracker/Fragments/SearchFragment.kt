@@ -1,5 +1,6 @@
 package com.legallegends.e_casetracker
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,12 +11,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.legallegends.e_casetracker.Adapters.RecentCaseAdapter
 import com.legallegends.e_casetracker.databinding.FragmentSearchBinding
 
-class SearchFragment : Fragment() {
+class SearchFragment : Fragment(), RecentCaseAdapter.OnItemClickListener {
 
     private lateinit var searchBinding: FragmentSearchBinding
     private lateinit var adapter: RecentCaseAdapter
-    private val originalCaseNumbers = listOf("101", "102", "103", "104", "105", "106", "107", "108", "109", "110")
-    private val originalCaseStates = listOf("Recent", "Recent", "Active", "Active", "Pending", "Pending", "Recent", "Recent", "Pending", "Pending")
+    private val originalCaseNumbers = listOf("101", "102", "103", "104", "105", "106", "107", "108", "109", "110","201", "202", "203", "204", "205", "206", "207", "208", "209", "210")
+    private val originalCaseStates = listOf("Recent", "Recent", "Active", "Active", "Pending", "Pending", "Recent", "Recent", "Pending", "Pending","Pending","Pending","Pending","Pending","Pending","Pending","Pending","Pending","Pending","Pending")
 
     private val filteredCaseNumbers = mutableListOf<String>()
     private val filteredCaseStates = mutableListOf<String>()
@@ -30,7 +31,7 @@ class SearchFragment : Fragment() {
         filteredCaseNumbers.addAll(originalCaseNumbers)
         filteredCaseStates.addAll(originalCaseStates)
 
-        adapter = RecentCaseAdapter(filteredCaseNumbers, filteredCaseStates, requireContext())
+        adapter = RecentCaseAdapter(filteredCaseNumbers, filteredCaseStates, requireContext(),this)
         searchBinding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         searchBinding.menuRecyclerView.adapter = adapter
 
@@ -76,5 +77,15 @@ class SearchFragment : Fragment() {
             }
         }
         adapter.notifyDataSetChanged()
+    }
+
+    override fun onItemClick(position: Int) {
+        val selectedCaseNumber = originalCaseNumbers[position]
+        val selectedCaseStatus = originalCaseStates[position]
+
+        val intent = Intent(requireContext(), CaseDetailsActivity::class.java)
+        intent.putExtra("CaseNumber", selectedCaseNumber)
+        intent.putExtra("CaseStatus", selectedCaseStatus)
+        startActivity(intent)
     }
 }

@@ -11,11 +11,17 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.constraintlayout.widget.ConstraintLayout
 
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.legallegends.e_casetracker.Model.UserModel
 import com.legallegends.e_casetracker.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
     lateinit var signUpBinding: ActivitySignUpBinding
     lateinit var firebaseAuth: FirebaseAuth
+    lateinit var databse:DatabaseReference
+
+    private lateinit var email: String
+    private lateinit var password:String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         signUpBinding = ActivitySignUpBinding.inflate(layoutInflater)
@@ -28,9 +34,9 @@ class SignUpActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         signUpBinding.buttonSignUp.setOnClickListener {
-            val email = signUpBinding.editTextViewEmailSignUP.text.toString()
-            val pass = signUpBinding.editTextViewPasswordSignUP.text.toString()
-            val confirmPass = signUpBinding.editTextViewConfirmPasswordSignUP.text.toString()
+            val email = signUpBinding.editTextViewEmailSignUP.text.toString().trim()
+            val pass = signUpBinding.editTextViewPasswordSignUP.text.toString().trim()
+            val confirmPass = signUpBinding.editTextViewConfirmPasswordSignUP.text.toString().trim()
             signUpWithFireBase(email, pass, confirmPass)
         }
 
@@ -47,6 +53,7 @@ class SignUpActivity : AppCompatActivity() {
                 firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
                         Toast.makeText(applicationContext,"Your account has been created. ✅👍😍", Toast.LENGTH_SHORT).show()
+                        saveUserData()
                         val intent = Intent(this, LoginActivity::class.java)
                         startActivity(intent)
                         finish()
@@ -65,6 +72,15 @@ class SignUpActivity : AppCompatActivity() {
             signUpBinding.progressCircularSignUp.visibility= View.INVISIBLE
             signUpBinding.buttonSignUp.isClickable=true
         }
+    }
+
+    private fun saveUserData() {
+         email=signUpBinding.editTextViewEmailSignUP.toString().trim()
+         password=signUpBinding.editTextViewConfirmPasswordSignUP.toString().trim()
+         val user=UserModel(email,password)
+        val userId: String = FirebaseAuth.getInstance().currentUser!!.uid
+        databse.child("user").child(userId).setValue(user)
+
     }
 
     private fun signUpBg() {
